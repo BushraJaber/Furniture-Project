@@ -1,0 +1,379 @@
+:root{
+    --maincolor:#054C73;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden; 
+}
+.navbar-expand-lg {
+    background-color:#DFE9F4 ;
+}
+
+
+    .active {
+        border-bottom: 5px solid var(--maincolor);       
+        color: #DFE9F4;        
+        text-shadow: 0 2px 4px rgba(6, 8, 147, 0.516);     
+
+    }
+    .dark-mode footer{
+        background-color: #121212;
+    }
+
+
+
+
+
+
+/* الطبقة الشفافة عند تفعيل وضع Dark Mode */
+body.dark-mode::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e04e;
+}
+body.dark-mode .navbar {
+    background-color: #33333355; 
+}
+header .dark-mode {
+    background-color: rgba(51, 51, 51, 0.8); 
+}
+
+button.dark-mode {
+    color: #e0e0e0;
+}
+
+
+.fade:not(--show){
+    transition: opacity 0.3s;
+}
+
+
+
+
+
+
+
+
+
+.navbar {
+    background-color: #DFE9F4; 
+    transition: background-color 0.3s; 
+}
+
+
+.d-scroll {
+    background-color: rgba(0, 0, 0, 0.8) !important; 
+}
+
+/* وضع الدارك مود */
+.dark-mode .navbar {
+    background-color: #333333; 
+}
+
+.dark-mode .d-scroll {
+    background-color: rgba(0, 0, 0, 0.801) !important;
+}
+.dark-mode .address{
+    color: #333333;
+}
+
+/* تغيير لون النصوص في وضع الدارك مود */
+.dark-mode .nav-link {
+    color: #ffffff; 
+}
+
+
+
+
+
+
+.navbar-brand{
+    font-size: 25px;
+    padding-left: 10px;
+    color: var(--maincolor);
+}
+
+.back{
+    background-position: bottom center;
+    background-size: cover;
+}
+.about{
+  display: flex;
+  flex-wrap: wrap;
+}
+.btn{
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+width: 200px;
+background-color:#054C73 ;
+color:white;
+
+
+
+
+}
+.new-section, .protofile {
+    margin: 0;
+    padding: 0;
+}
+.all h2{
+    color: #054C73;
+    font-size: 50px;
+   
+}
+.all{
+    position: absolute; 
+    top: 160px; 
+    right: 10px; 
+    color: white; 
+    background-color:#DFE9F4 ;
+
+    padding: 20px; 
+    border-radius: 50px; 
+    border-top: 5px solid #1a488b;
+}
+.address{
+    padding-top: 10px;
+    background-color:#DFE9F4 ;
+}
+.protofile{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.protofile p{
+    color: #666666;
+}
+.title h2{
+color: var(--maincolor);
+}
+.nav-pills .nav-link.active{
+    background-color: var(--maincolor);
+}
+.mb-3 {
+    margin-bottom: 1rem !important;
+    display: flex;
+    justify-content: center;
+}
+.nav-pills .nav-link {
+    font-weight: bold;
+    color: var(--maincolor);
+}
+.d-scroll{
+    background-color: rgb(115, 151, 151) !important;
+}
+.contact nav{
+    background-color: rgb(115, 151, 151,.5) !important;
+
+}
+.col-md-4 i{
+    font-size: 30px;
+    color: var(--maincolor);
+
+}
+
+.par {
+    color: var(--maincolor);
+    background-color: #DFE9F4;
+    padding: 5px;
+   
+}
+.card img{
+    width: 700px !important;
+    height: 250px !important;
+}
+.card{
+    border-radius: 6px;
+    box-shadow: 0px 10px 15px rgba(86, 70, 189, 0.1);
+    background-color:#DFE9F4;
+
+    cursor: pointer;
+}
+.card span{
+    color: var(--maincolor);
+    font-weight: bold;
+}
+.par{
+    cursor: pointer;
+}
+.inscp{
+    padding: 40px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.inscp .title{
+    color: var(--maincolor);
+    font-weight: 2000;
+    text-align: center;
+}
+
+
+
+
+
+
+.signin-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.signup-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.signin-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.signup-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.signin-container input[type="text"],
+.signin-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.signup-container input[type="text"],
+.signup-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.signin-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #054c73;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.signin-container button:hover {
+    background-color: #033d5b;
+}
+.signup-container button:hover {
+    background-color: #033d5b;
+}
+.inputtt {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.inputtt i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+.inputtt input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.all {
+    text-align: center;
+}
+.signup-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #054c73;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.carousel-control-prev , .carousel-control-next{
+    width: 60px;
+    height: 60px;
+    top:50%;
+    background-color: var(--maincolor);
+   border-radius: 50%;
+
+}
+h1{
+    color: var(--maincolor);
+}
+
+.footer {
+    background-color: #054C73; 
+    color: #ffffff;
+    padding: 30px 0;
+}
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.footer .social-icons a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+.footer .contact-info {
+    margin-top: 20px;
+}
+.footer .contact-info .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.footer .contact-info i {
+    margin-right: 10px;
+}
+
+
+
+
+#toggle-dark-mode {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px; 
+    padding: 5px 5px; 
+    cursor: pointer;
+    font-size: 2rem; 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s; }
+#toggle-dark-mode:hover {
+    color: #3c799183; 
+}
