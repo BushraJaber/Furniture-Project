@@ -27,20 +27,6 @@ body {
 
 
 
-
-
-/* الطبقة الشفافة عند تفعيل وضع Dark Mode */
-body.dark-mode::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
-    z-index: -1; 
-}
-
 body.dark-mode {
     background-color: #121212;
     color: #e0e0e04e;
@@ -111,10 +97,7 @@ button.dark-mode {
     background-position: bottom center;
     background-size: cover;
 }
-.about{
-  display: flex;
-  flex-wrap: wrap;
-}
+
 .btn{
     border-radius: 30px;
     padding: 10px;
@@ -367,7 +350,7 @@ h1{
     background-color: #f0f0f0;
     border: none;
     border-radius: 5px; 
-    padding: 5px 5px; 
+    padding: 3px 3px; 
     cursor: pointer;
     font-size: 2rem; 
     display: inline-flex;
